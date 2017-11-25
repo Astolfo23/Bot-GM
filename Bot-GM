@@ -1,0 +1,145 @@
+const Discord = require("discord.js");
+const  client = new Discord.Client();
+const config = require("./config.json");
+
+client.on("ready", () => {
+   console.log("Estoy listo!");
+   client.user.setGame('tocar menores');
+  });
+var prefix = config.prefix;
+
+client.on("message", (message) => {
+  if (message.content.startsWith(prefix + "hola")) {
+    message.channel.send("Hola, amigo.");
+} else
+if (message.content.startsWith(prefix + "madrid")) {
+  message.channel.send("Te invito 15 días a madrid con todo pago.");
+} else
+if (message.content.startsWith(prefix + "mp")) {
+  message.channel.send("https://i.imgur.com/6M81ILm.png");
+} else
+if (message.content.startsWith(prefix + "arial")) {
+  message.channel.send("https://i.imgur.com/6EECZzH.png");  
+} else
+if (message.content.startsWith(prefix + "niñato")) {
+  message.channel.send("Mira, niñato, tenme cara a cara. No duras ni cinco minutos; pero en ningún aspecto. En ninguno, sabes???");
+} else
+if (message.content.startsWith(prefix + "alma")) {
+  message.channel.send("Es una pena que seas tan, pero tan, pobre de alma.");
+} else
+if (message.content.startsWith(prefix + "bienvenido1")) {
+  message.channel.send("Te hago extensivos mis mejores deseos en tu estancia en este server de locos adorables."); 
+} else
+if (message.content.startsWith(prefix + "bienvenido2")) {
+  message.channel.send("Contento de que te unas a nosotros. Pásalo bien y aprende un montón, que este server da para muchoooo!!!");  
+} else
+if (message.content.startsWith(prefix + "bienvenido3")) {
+  message.channel.send("No sabes dónde te has metido... huye mientras puedas, no seas insensato, xD. Para cuando quieras darte cuenta... ya no podrás salir!!!");
+} else
+if (message.content.startsWith(prefix + "guarderia")) {
+  message.channel.send("Joder, ya te vale. Me alegro mucho de que aumentes la guardería de este maravilloso server.");
+} else
+if (message.content.startsWith(prefix + "kumi1")) {
+  message.channel.send("https://i.imgur.com/MPqVA67.jpg");
+} else
+if (message.content.startsWith(prefix + "frase")) {
+  message.channel.send("Te gustaría, aunque fuera sólo por un día, poder percibir los sentimientos/pensamientos internos y verdaderos de los demás... y tener la clara constatación de la cantidad de falsedad y de egocentrísmo que anida en ellos??? Realmente lo soportarías???");
+} else
+if (message.content.startsWith(prefix + "dni")) {
+  message.channel.send("Hola Khaas. Me alegro de leerte aunque, la verdad, por tu respuesta, me dan ganas de darte de hostias hasta en el DNI.");
+} else
+if (message.content.startsWith(prefix + "razon")) {
+  message.channel.send("No llevas ninguna razón brunner77, ninguna. Esto para empezar. Te repito: nos metes a los dos en el mismo saco de forma absolutamente injusta. Yo he callado y callado. He advertido mi moderación y he explicado los porqués a través de los causes habituales.");
+} else
+if (message.content.startsWith(prefix + "adios")) {
+  message.channel.send("Después de dejar pasar un tiempo más que prudencial, y habiéndo hecho todo lo que es posible de mi parte, aprovecho este mensaje para despedirme de UF. Supongo que el adiós será definitivo por cuanto dudo mucho que todo aquello que, contrariamente a mi sentir, me lleva a tomar la decisión de marcharme vaya a cambiar. Si, por lo que fuese, se diera semejante circunstancia regresaría.");
+} else
+if (message.content.startsWith(prefix + "comes")) {
+  message.channel.send("Hazme un favor CrazyRo porque no haces que te caes y me la comes? xDDDDD.");
+} else
+if (message.content.startsWith(prefix + "gif")) {
+  message.channel.send("https://i.imgur.com/yWOopfM.gifv");
+} else
+if (message.content.startsWith(prefix + "kumi2")) {
+  message.channel.send("https://i.imgur.com/pZDtecl.jpg");
+} else
+if (message.content.startsWith(prefix + "yugi")) {
+  message.channel.send("https://i.imgur.com/wf0sqGV.png");
+} else
+if (message.content.startsWith(prefix + "fer1")) {
+  message.channel.send("https://cdn.discordapp.com/attachments/380977070810988547/381577848424497153/hDjnryh.jpg");
+} else
+if (message.content.startsWith(prefix + "kumicho")) {
+  message.channel.send("https://i.imgur.com/PG25B23.jpg");
+} else
+if (message.content.startsWith(prefix + "orgia")) {
+  message.channel.send("https://i.imgur.com/YdbxAf7.png");
+} else
+if (message.content.startsWith(prefix + "mala fe")) {
+  message.channel.send("Hay 4 cosas que no tolero jamás: la injusticia, la mala fe, la necedad y el desagradecimiento.");
+} else
+if (message.content.startsWith(prefix + "paz")) {
+  message.channel.send("No empecemos, por favor, que acabo de regresar. Hay tiempo, hay tiempo. Una tregua... paz y sosiego.");
+} else
+if (message.content.startsWith(prefix + "fer2")) {
+  message.channel.send("https://i.imgur.com/uGptdQw.png");
+} else
+if (message.content.startsWith(prefix + "pc")) {
+  message.channel.send("Te lo digo por última vez, y no te lo repito más. No juegues conmigo detrás de un PC; deja de actuar de mala fe. Estoy hasta las narices de repetírtelo de buenas maneras. Si quieres algo, me lo dices en persona. Tíos como tú he conocido miles desde antes de que tú nacieras. No me vaciles más amparándote en un nick y un anonimato. No me cites más, no me lances indirectas. Deja de intentar provocarme constantemente. Repito: si deseas algo de mí me comentas a la cara. Basta ya que me tienes hasta las pelotas.");
+} else
+if (message.content.startsWith(prefix + "again")) {
+  message.channel.send("https://www.youtube.com/watch?v=xq36mU10FrU");
+} else
+if (message.content.startsWith(prefix + "buena calidad")) {
+  message.channel.send("https://i.imgur.com/Gb4DNDg.png");
+} else
+if (message.content.startsWith(prefix + "chupa pijas")) {
+  message.channel.send("https://vgy.me/V1LQXA.jpg");
+} else
+if (message.content.startsWith(prefix + "facha1")) {
+  message.channel.send("https://vgy.me/Kn3bkW.jpg");
+} else
+if (message.content.startsWith(prefix + "facha2")) {
+  message.channel.send("https://vgy.me/OnDOM6.jpg");
+} else
+if (message.content.startsWith(prefix + "go to sleep")) {
+  message.channel.send("https://i.imgur.com/GakpCwW.jpg");  
+} else
+if (message.content.startsWith(prefix + "uf")) {
+  message.channel.send("https://i.imgur.com/j1xT5bw.png");
+} else
+if (message.content.startsWith(prefix + "parece")) {
+  message.channel.send("https://i.imgur.com/nrBBngL.png");
+} else
+if (message.content.startsWith(prefix + "negativo")) {
+  message.channel.send("https://i.imgur.com/mImBV29.png");            
+} else
+if (message.content.startsWith(prefix + "existyr")) {
+  message.channel.send("<brunner77> cada año q pasa me vy haciendo mas grande y vy pensando y haciendo mjor las cosas la vida es un libro abierto q vaamos resolviendo pagina x pagina dnd hay tristeza,amr,desilucion y alegrias ..el dia q ese libro se cierra es cuando dejamos de existyr..¡¡¡¡");
+} else
+if (message.content.startsWith(prefix + "positivo")) {
+  message.channel.send("GOD MAZINGER (365) - Positivo (+2): Que la misma esencia del universo, en todas su infinitas dimensiones, te bendiga a ti y a tus seres queridos. Un muy fuerte abrazo.");
+} else
+if (message.content.startsWith(prefix + "guillermo")) {
+  message.channel.send("```Hola a todos. Llevo poco tiempo en el foro pero he de decir que estoy bastante complacido, en general. Me llamo Guillermo, tengo 43 años, me encanta el cine, el deporte (he practicado mucho aunque ahora ya no tanto) Escribo novela, prosa poética, poesía y ensayo. Vivo en Madrid, donde nací. Hago voluntariado con las personas mayores y con los niños desfavorecidos. Estuve 3 meses en la selva de Guatemala, aportando todo lo que pude a aquellas gentes. Mazinger Z, desde mi infancia, me ha fascinado y me ha hecho soñar... y lo sigue haciendo. Tengo mucho carácter, a veces mala leche, muy sensible y me gusta la gente sincera pero respetuosa. No me gustan los que no contestan, los que desafían a los moderadores (como he visto que ha ocurrido hoy) No me gustan los que confunden la confianza con la falta de respeto. Me agradan mucho los niños (entre otras cosas, soy profesor) y los jóvenes pero, ni mucho menos, los criajos que tienen por costumbre pasarse de la raya. No me gusta la gente que habla mal por sistema y utiliza expresiones groseras. Tampoco los que pre-juzgan y van de listos. Me gusta la gente sencilla y espontánea. Tengo predilección por varios moderadores y usuarios (no los voy a nombrar porque ellos saben muy bien quiénes son) No me gusta la gente tibia; me gustan los que se mojan.```");
+} else
+if (message.content.startsWith(prefix + "1help")) {
+  message.channel.send("```1. hola\n2. madrid\n3. niñato\n4. alma\n5. dni\n6. razon\n7. dni\n8. mp\n9. bienvenido1-3\n10. guarderia\n11. frase\n12. adios\n13. mala fe\n14. comes \n15. fer1-2\n16. kumicho\n17. kumi1-2\n18. paz\n19. pc\n20. facha1-2\n21. chupa pijas\n22. yugi\n23. guillermo\n24. positivo\n25. existyr\n26. arial\n27. buena calidad\n28. orgia\n29. again\n30. go to sleep\n31. uf\n32. privado```");
+} else
+if(message.content.startsWith(prefix + 'privado')){
+  
+message.channel.send('**'+message.author.username+'**, Revisa tus mensajes privados :)');
+message.author.send("Hola, Amigo.\n\nPerdona que te de tanto la paliza pero te echo de menos. Me gustaría conocerte en pesona. Vienes alguna vez a España?\n\nTío, eres especial, eso seguro. Mi intuición y mi experiencia rara vez me fallan.\n\nJoder, con tan pocos añitos, en cierta medida, me recuerdas a mí. La verdad, me da igual si piensas que soy un exagerado o que lo digo por decir, no sé muy bien por qué, pero te quieto un montón.\n\nMe gustaría saber mas de ti.\n\nUn abrazo, amigo.");
+} else
+if (message.content.toLowerCase() .indexOf('mazinger') >=0) {
+    message.react (':GM:384073782052257832') ;
+} else
+  if (message.content.toLowerCase() .indexOf('kumicho') >=0) {
+     message.react (':kumi:384085825098481665') ;       
+} else
+if (message.content.toLowerCase() .indexOf('mamaguevo') >=0) {
+if(message.author.bot) return; 
+   message.channel.sendMessage ('carks mamaguevo') ;    
+}
+});
+client.login("MzgwOTczODQzMTEzNTc0NDEy.DPAZVQ.b0KtAN88GOQsGJFJ8rrSBRqdWUk");
